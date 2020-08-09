@@ -10,7 +10,6 @@ import (
 func main() {
 	env := flag.String("env", "dev", "Environment Test Or Development")
 	flag.Parse()
-	fmt.Println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~", *env)
 	external := factory.GetExternal(*env)
 	err := external.DependencyFunction()
 	if err != nil {

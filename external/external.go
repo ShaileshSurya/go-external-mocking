@@ -4,6 +4,6 @@ import "fmt"
 
 // DependencyFunction ...
 func DependencyFunction() (err error) {
-	fmt.Println("Hurray Dependency Function is called")
+	fmt.Println("Hurray Dependency Function is Called...")
 	return
 }

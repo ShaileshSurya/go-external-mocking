@@ -2,6 +2,7 @@ package mock
 
 import (
 	"errors"
+	"fmt"
 
 	"github.com/ShaileshSurya/go-external-mocking/dependfactory/interfacer"
 )
@@ -13,5 +14,6 @@ type MockExternal struct {
 
 // DependencyFunction ...
 func (e MockExternal) DependencyFunction() error {
+	fmt.Println("Hurray Mock Dependency Fuction is called...")
 	return errors.New("Error Returning from depenedency function")
 }
